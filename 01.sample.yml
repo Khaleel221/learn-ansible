@@ -5,3 +5,6 @@
     - name: printing message
       ansible.builtin.debug:
         msg: Hello world
+
+    - name: root user
+      ansible.builtin.shell: set-prompt ansible-controller
