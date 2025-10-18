@@ -1,5 +1,5 @@
 - name: variables example
-  hosts: all
+  hosts: localhost
   become: true
   vars:
     URL: google.com
