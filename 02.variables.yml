@@ -3,7 +3,7 @@
   become: true
   vars:
     URL: google.com
-  vars_file:
+  vars_files:
     vars.yml
   tasks:
     - name: printing variable from play level
