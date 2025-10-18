@@ -41,12 +41,12 @@
           Timings: "6pm"
 
     - name: declare variable dynamically
-      ansible.builtin.shell: UPTIME
-      register: out
+      ansible.builtin.shell: uptime
+      register: OUT
 
     - name: printing variable
       ansible.builtin.debug:
-        msg: "{{ out }}"
+        msg: "{{ OUT }}"
 
 
 
