@@ -3,6 +3,8 @@
   become: true
   vars:
     URL: google.com
+  vars_file:
+    vars.yml
   tasks:
     - name: printing variable from play level
       ansible.builtin.debug:
@@ -13,6 +15,10 @@
         msg: "Fruit name is - {{ FRUIT }}"
       vars:
         FRUIT: Apple
+
+    - name: print variables from file
+      ansible.builtin.debug:
+        msg: "name is - {{ NAME }}"
 
 
 
