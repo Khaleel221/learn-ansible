@@ -20,5 +20,10 @@
       ansible.builtin.debug:
         msg: "name is - {{ NAME }}"
 
+    - name: printing variable from CLI
+      ansible.builtin.debug:
+        msg: "Course name is - {{ COURSE_NAME }}"
+
+
 
 
