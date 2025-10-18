@@ -34,7 +34,7 @@
 
     - name: printing map variable
       ansible.builtin.debug:
-        msg: "Variable from list 1 - {{ Devops["Trainer"] }}, Variable from list 1 -{{ Timings["Timings"] }}"
+        msg: Variable from list 1 - {{ Devops["Trainer"] }}, Variable from list 1 -{{ Timings["Timings"] }}
       vars:
         Devops:
           Trainer: "john"
