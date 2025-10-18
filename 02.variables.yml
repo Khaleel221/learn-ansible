@@ -1,12 +1,12 @@
-- name: variables examples
-  hosts: localhost
+- name: variables example
+  hosts: all
   become: true
   vars:
-    URL: Example.com
-
+    URL: google.com
   tasks:
-    - name: print URL
+    - name: printing variable from play level
       ansible.builtin.debug:
-        msg: "URL from play level is - {{ URL }}"
+        msg: "url is {{ URL }}"
+
 
 
