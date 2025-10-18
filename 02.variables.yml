@@ -24,6 +24,13 @@
       ansible.builtin.debug:
         msg: "Course name is - {{ COURSE_NAME }}"
 
+    - name: printing list variable
+      ansible.builtin.debug:
+        msg: "Variable from list 1 - {{ [0] }}, Variable from list 1 -{{ [0] }}"
+      vars:
+        fruit:
+          - apple
+          - banana
 
 
 
