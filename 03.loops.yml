@@ -2,9 +2,9 @@
   hosts: localhost
   become: true
   tasks:
-    - name: devops course
+    - name: fruit names course
       ansible.builtin.debug:
         msg: fruit names
-      loops:
+      loop:
         - apple
         - banana
