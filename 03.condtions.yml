@@ -5,9 +5,9 @@
     - name: devops course
       ansible.builtin.debug:
         msg: devops course
-        when: course_name == "devops"
+      when: course_name == "devops"
 
     - name: aws course
       ansible.builtin.debug:
         msg: aws course
-        when: course_name == "aws"
+      when: course_name == "aws"
