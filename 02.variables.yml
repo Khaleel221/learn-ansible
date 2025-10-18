@@ -8,5 +8,11 @@
       ansible.builtin.debug:
         msg: "url is {{ URL }}"
 
+    - name: print fruit from task level
+      ansible.builtin.debug:
+        msg: "Fruit name is - {{ FRUIT }}"
+      vars:
+        FRUIT: Apple
+
 
 
