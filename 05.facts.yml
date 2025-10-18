@@ -2,6 +2,6 @@
   hosts: localhost
   become: true
   tasks:
-    - name: print ansible_architecture
+    - name: ansible_default_ipv4.address
       ansible.built.debug:
-        msg: "{ansible_architecture}"
+        msg: "The IP of this host is {{ ansible_default_ipv4.address }}"
