@@ -40,5 +40,13 @@
           Trainer: "john"
           Timings: "6pm"
 
+    - name: declare variable dynamically
+      ansible.builtin.shell: UPTIME
+      register: out
+
+    - name: printing variable
+      ansible.builtin.debug:
+        msg: "{{ out }}"
+
 
 
