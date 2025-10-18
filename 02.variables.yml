@@ -7,6 +7,6 @@
   tasks:
     - name: print URL
       ansible.builtin.debug:
-      msg: "URL from play level is - {{ URL }}"
+        msg: "URL from play level is - {{ URL }}"
 
 
