@@ -1,0 +1,10 @@
+- name: condtions playbook
+  hosts: localhost
+  become: true
+  tasks:
+    - name: devops course
+      ansible.builtin.debug:
+        msg: fruit names
+      loops:
+        - apple
+        - banana
