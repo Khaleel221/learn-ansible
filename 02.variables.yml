@@ -38,7 +38,7 @@
       vars:
         Devops:
           Trainer: "john"
-          Timings: 6pm
+          Timings: "6pm"
 
 
 
