@@ -2,12 +2,12 @@
   hosts: localhost
   become: true
   tasks:
-    - name: devops course
+    - name: course name
       ansible.builtin.debug:
         msg: devops course
       when: course_name == "devops"
 
-    - name: aws course
+    - name: course name
       ansible.builtin.debug:
         msg: aws course
       when: course_name == "aws"
