@@ -1,0 +1,10 @@
+- name: variables examples
+  hosts: localhost
+  become: true
+  vars:
+    URL: Example.com
+  task:
+    - name: print URL
+  ansible.builtin.debug:
+    msg: URL from play level is - {{ URL }}
+
